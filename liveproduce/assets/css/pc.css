@@ -266,4 +266,31 @@
         border-radius: 7px;
         font-size: 16px;
     }
+    /* ____#post-btn */
+    #content #post-btn
+    {
+        width: 110px;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .return
+    {
+        width: 55px;
+        height: 35px;
+        border: none;
+        outline: none;
+        background:#7fbfff;
+        border-radius: 7px;
+        font-size: 16px;
+    }
+    .doc-post
+    {
+        width: 55px;
+        height: 35px;
+        border: none;
+        outline: none;
+        background:#ffd67f;
+        border-radius: 7px;
+        font-size: 16px;
+    }
 }

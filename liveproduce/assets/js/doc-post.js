@@ -3,6 +3,8 @@ $(document).ready(function () {
     // 初期画面
     $('#sugg').hide();
     $('#repo').hide();
+    $('#doc-pre').hide();
+    $('#post-btn').hide();
 
     // ボタンのイベントリスナー
     // 提案書ボタン
@@ -12,7 +14,7 @@ $(document).ready(function () {
         $('#repo-btn').css({ 'background': 'white', 'color': 'black' });
         $('#sugg').fadeIn();
         $('#repo').hide();
-    });
+    })
     // 報告書ボタン
     $('#repo-btn').on('click', function () {
         doc_select = 2;
@@ -26,5 +28,24 @@ $(document).ready(function () {
         if (doc_select == 0) {
             alert('記入する書類を選択してください。');
         }
+        else {
+            // プレビュー画面を表示させる
+            $('#doc-form').hide();
+            $('.pre-btn').hide();
+            $('#doc-pre').fadeIn();
+            $('#post-btn').fadeIn();
+        }
+    })
+    // 戻るボタン
+    $('.return').on('click', function () {
+        // フォームを表示し、プレビューは非表示
+        $('#doc-form').fadeIn();
+        $('.pre-btn').fadeIn();
+        $('#doc-pre').hide();
+        $('#post-btn').hide();
+    })
+    // 投稿ボタン
+    $('.doc-post').on('click', function () {
+
     })
 })
