@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/pc.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/smart-phone.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/header.css">
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/header.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div id="nav-drawer">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input"><span></span></label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+
+            <div id="nav-content">
+                <ul class="sidenav">
+                    <li><a href="index.html">ライブ提案書</a></li>
+                    <li><a href="index.html">ライブ報告書</a></li>
+                    <li><a href="index.html">書類を書く</a></li>
+                    <li><a href="index.html">このサイトについて</a></li>
+                </ul>
+            </div>
+
+            <form id="form01" action="#" class="form">
+                <input id="input01" type="text"><input id="submit01" type="submit" value="検索">
+            </form>
+
+            <div class="info">
+                <a href="">このサービスについて</a>
+            </div>
+        </div>
+    </header>
+
+    <div id='page'>
+        <div id='content'>
+            <div id='tag-area'>
+                <!--タグの表示エリア-->
+                <ul id='tags'>
+                    <li class='doc-tag'>[doc-tag]</li>
+                    <li class='doc-tag'>[doc-tag]</li>
+                    <li class='doc-tag'>[doc-tag]</li>
+                </ul>
+            </div>
+
+            <div id='doc-area'>
+                <!--post内容表示エリア-->
+                <img src='../assets/img/DSC_0651.JPG' alt='[doc-img]' class='doc-image'>
+                <h2 class='doc-title'>バンドリ！パ・リーグコラボ</h2>
+                <p class='doc-main'>
+                    あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+                </p>
+            </div>
+
+            <div id='cmt-area'>
+                <h2 class='title'>コメント</h2>
+                <!--コメント表示エリア-->
+                <div id='posted-cmt'>
+                    <!--コメント数に応じて表示数が変化する-->
+                    <ul id='cmt-list'>
+                        <li class='cmt-user-icon'>
+                            <img src='../assets/img/icon2.png' alt='[user-img]'>
+                        </li>
+                        <li class='user-id'>
+                            hasshie53
+                        </li>
+                        <li class='cmt'>
+                            あいみんの神スイングが見れて最高だった！
+                        </li>
+                    </ul>
+                </div>
+
+                <div id='cmt-form'>
+                    <!--コメント入力フォーム-->
+                    <form action="#" method="post">
+                        <input class="input-box" type="text" placeholder='コメントを残す'><input class='cmt-btn' type="submit"
+                            name="submit" value="入力">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

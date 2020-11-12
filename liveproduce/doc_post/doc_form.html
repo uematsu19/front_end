@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/pc.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/smart-phone.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/header.css">
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/header.js"></script>
+    <title>Document_form</title>
+</head>
+
+<body>
+    <header>
+        <div id="nav-drawer">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input"><span></span></label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+
+            <div id="nav-content">
+                <ul class="sidenav">
+                    <li><a href="index.html">ライブ提案書</a></li>
+                    <li><a href="index.html">ライブ報告書</a></li>
+                    <li><a href="index.html">書類を書く</a></li>
+                    <li><a href="index.html">このサイトについて</a></li>
+                </ul>
+            </div>
+
+            <form id="form01" action="#" class="form">
+                <input id="input01" type="text"><input id="submit01" type="submit" value="検索">
+            </form>
+
+            <div class="info">
+                <a href="">このサービスについて</a>
+            </div>
+        </div>
+    </header>
+
+    <div id='page'>
+        <div id='navigation-wrap'>
+            <nav id='navigation'>
+                <ul id='sort-menu'>
+                    <li class='menu-list'>
+                        <p class='menu-item'>ライブ提案書</p>
+                    </li>
+                    <li class='menu-list'>
+                        <p class='menu-item'>ライブ報告書</p>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id='content'>
+            <div id='selected-doc'>
+                <!--選択した書類 + 書き込み-->
+                <h2 class='title'>[document] 書き込み</h2>
+            </div>
+
+            <div id='doc-form'>
+                <div id='select-tags'>
+                    <!--タグを選択-->
+                    <label class='label'>
+                        <input type='checkbox' name='' value='song'>歌
+                    </label>
+                    <label class='label'>
+                        <input type='checkbox' name='' value='dance'>ダンス
+                    </label>
+                    <label class='label'>
+                        <input type='checkbox' name='' value='video'>映像
+                    </label>
+                    <label class='label'>
+                        <input type='checkbox' name='' value='fansa'>ファンサ
+                    </label>
+                    <label class='label'>
+                        <input type='checkbox' name='' value='excited'>盛り上がり
+                    </label>
+                    <label class='label'>
+                        <input type='checkbox' name='' value='performance'>パフォーマンス
+                    </label>
+                    <label class='label'>
+                        <input type='checkbox' name='' value='set-list'>セトリ
+                    </label>
+                </div>
+
+                <div id='forms'>
+                    <!--選択したタグ分入力できる項目が増える-->
+                    <div class='form'>
+                        <h2 class='title'>[tag] について</h2>
+                        <textarea class='input-box' name="doc-body" placeholder="[tag] について入力してください"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div id='pre-button'>
+                <!--プレビュー画面へ遷移-->
+                <button type="button" class="pre-btn">確認</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

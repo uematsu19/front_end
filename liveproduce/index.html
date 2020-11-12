@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/common.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/pc.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/smart-phone.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/header.css">
+    <script src="./assets/js/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/header.js"></script>
+    <title>書類一覧</title>
+</head>
+
+<body>
+    <header>
+        <div id="nav-drawer">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input"><span></span></label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+
+            <div id="nav-content">
+                <ul class="sidenav">
+                    <li><a href="index.html">ライブ提案書</a></li>
+                    <li><a href="index.html">ライブ報告書</a></li>
+                    <li><a href="index.html">書類を書く</a></li>
+                    <li><a href="index.html">このサイトについて</a></li>
+                </ul>
+            </div>
+
+            <form id="form01" action="#" class="form">
+                <input id="input01" type="text"><input id="submit01" type="submit" value="検索">
+            </form>
+
+            <div class="info">
+                <a href="">このサービスについて</a>
+            </div>
+        </div>
+    </header>
+
+    <div id='page'>
+        <div id='doc-sort'>
+            <!--書類全体からソートする-->
+            <button type="button" class="sort-btn">新着</button><button type="button" class="sort-btn">人気</button><button
+                type="button" class="sort-btn">新しいコメント</button>
+        </div>
+
+        <div id='content'>
+            <div id='search-res'>
+                <p>検索結果 <span class='hit-cnt'>8</span> 件</p>
+            </div>
+
+            <div id='post-wrapper'>
+                <!--post数に応じて表示数が変化する-->
+                <div class='post'>
+                    <h2 class='post-title'>バンドリ！パ・リーグコラボ</h2>
+                    <img src='./assets/img/DSC_0651.JPG' alt='[post-img]' class='post-image'>
+                    <!--本文の文頭50字など-->
+                    <p class='post-heading'>ああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+                    <a href='./' class='more-link'>続きを読む</a>
+                </div>
+                <div class='post'>
+                    <h2 class='post-title'>バンドリ！パ・リーグコラボ</h2>
+                    <img src='./assets/img/DSC_0651.JPG' alt='[post-img]' class='post-image'>
+                    <!--本文の文頭50字など-->
+                    <p class='post-heading'>ああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+                    <a href='./' class='more-link'>続きを読む</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

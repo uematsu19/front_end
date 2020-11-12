@@ -1,0 +1,267 @@
+/* PC style */
+@media screen and (min-width: 481px)
+{ 
+    #page
+    {
+        width: 900px;
+        margin: auto;
+        padding-top: 75px;
+    }
+
+    /* ____sort-menu */
+    #doc-sort {
+        width: 510px;
+        height: 45px;
+        margin-bottom: 20px;
+    }
+    #doc-sort .sort-btn {
+        width: 170px;
+        height: 45px;
+
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 7px;
+
+        font-size: 18px;
+    }
+
+    /* content */
+    #content
+    {
+        width: 900px;
+        background: #FFFFFF;
+        border-radius: 9px;
+        padding: 5px;
+        padding-bottom: 20px;
+    }
+
+    /* ____#serch-res */
+    #content #search-res p
+    {
+        padding: 9px;
+        margin-left: 14px;
+        font-size: 16px;
+    }
+    #content #search-res p .hit-cnt
+    {
+        font-weight: bold;
+    }
+
+    /* ____#post-wrapper */
+    #content #post-wrapper
+    {
+        margin: auto;
+        overflow: hidden;
+    }
+    #content #post-wrapper .post
+    {
+        margin: 25px;
+        width: 250px;
+        height: 330px;
+
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 9px;
+
+        float: left;
+    }
+    /* ________.post-title */
+    #content #post-wrapper .post .post-title
+    {
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 18px;
+    }
+    /* ________.post-image */
+    #content #post-wrapper .post .post-image
+    {
+        width: 220px;
+        height: 124px;
+        object-fit: cover;
+        margin-top: 5px;
+        margin-left: 15px;
+        margin-right: 15px;
+        border-radius: 6px;
+    }
+    /* ________.post-heading */
+    #content #post-wrapper .post .post-heading
+    {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+    /* ________.more-link */
+    #content #post-wrapper .post .more-link
+    {
+        color: black;
+        text-align: center;
+
+        padding-top: 2px;
+        padding-bottom: 5px;
+        padding-right: 5px;
+        padding-left: 5px;
+
+        width: 100px;
+        height: 18px;
+        margin-left: 140px;
+
+        border-radius: 3px;
+        background: #99CEFF;
+
+        text-decoration: none;
+    }
+    #content #post-wrapper .post .more-link:hover
+    {
+        /* on-cursor */
+        color: whitesmoke;
+        background: #598bbb;
+    }
+
+    /* ____#tag-area */
+    #content #tag-area
+    {
+        padding: 2px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    #content #tag-area #tags
+    {
+        overflow: hidden;
+        list-style: none;
+        padding: 0px;
+    }
+    #content #tag-area .doc-tag
+    {
+        float: left;
+        border: solid 1px skyblue;
+        border-radius: 5px;
+        color: black;
+        background-color: skyblue;
+        margin-right: 5px;
+        padding: 3px;
+    }
+
+    /* ____#doc-area */
+    #content #doc-area
+    {
+        width: 830px;
+        margin: auto;
+
+        border-radius: 8px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    #content #doc-area .doc-image
+    {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 16px;
+        border-radius: 6px;
+    }
+    #content #doc-area .doc-title
+    {
+        font-size: 27px;
+        padding-left: 10px;
+    }
+    #content #doc-area .doc-main
+    {
+        font-size: 20px;
+        padding: 10px;
+        padding-top: 0px;
+    }
+
+    /* ____#cmt-area */
+    /* #content #cmt-area .title */
+    .title
+    {
+        padding: 0.5em;
+        color: #494949;
+        background: #fffaf4;
+        border-left: solid 5px #ffaf58;
+        border-radius: 3px;
+        margin-bottom: 25px;
+        margin-top: 30px;
+        padding: 8px
+    }
+    #content #cmt-area #posted-cmt #cmt-list
+    {
+        list-style: none;
+        overflow: hidden;
+    }
+    #content #cmt-area #posted-cmt #cmt-list li
+    {
+        float: left;
+    }
+    #content #cmt-area #posted-cmt #cmt-list .cmt-user-icon img
+    {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    #content #cmt-area #posted-cmt #cmt-list .user-id
+    {
+        padding: 10px;
+        padding-top: 12px;
+        font-size: 15px;
+        color: darkgray;
+    }
+    #content #cmt-area #posted-cmt #cmt-list .cmt
+    {
+        padding: 10px;
+    }
+    #content #cmt-area #cmt-form
+    {
+        width: 343px;
+        margin: auto;
+    }
+    #content #cmt-area #cmt-form form .input-box
+    {
+        width: 280px;
+        height: 30px;
+    }
+    #content #cmt-area #cmt-form form .cmt-btn
+    {
+        width: 55px;
+        height: 35px;
+        border: none;
+        position: relative;
+        background:#7fbfff;
+    }
+
+    /* ____#doc-form */
+    #content #doc-form #select-tags
+    {
+        font-size: 18px;
+        padding-right: 6px;
+        padding-left: 6px;
+    }
+    #content #doc-form .input-box
+    {
+        width: 80%;
+        height: 75px;
+
+        margin-left: 10%;
+        margin-right: 10%;
+
+        resize: vertical;
+    }
+
+    /* ____#pre-button */
+    #content #pre-button
+    {
+        width: 55px;
+        margin: auto;
+        margin-top: 30px;
+    }
+    #content #pre-button .pre-btn
+    {
+        width: 55px;
+        height: 35px;
+        border: none;
+        background:#7fbfff;
+        border-radius: 7px;
+        font-size: 16px;
+    }
+}

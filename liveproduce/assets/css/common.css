@@ -1,0 +1,33 @@
+/* PC & smart-phone style */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html
+{
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    font-size: 100%;
+    background: #F5F5F5;
+}
+
+/* ____navigation style */
+#main-nav
+{
+    height: 55px;
+    background: #373737;
+}
+#navigation-wrap #navigation ul
+{
+    list-style: none;
+    overflow: hidden;
+}
+#navigation-wrap #navigation .menu-list
+{
+    text-decoration: none;
+    float: left;
+}
+#navigation ul
+{
+    padding-left: 0px;
+}
