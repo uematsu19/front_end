@@ -8,9 +8,11 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/pc.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/smart-phone.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/header.css">
+
     <script src="../assets/js/jquery-3.4.1.min.js"></script>
     <script src="../assets/js/header.js"></script>
     <script src="../assets/js/sort_style.js"></script>
+    <script src="../assets/js/doc-post.js"></script>
     <title>Document_form</title>
 </head>
 
@@ -43,15 +45,11 @@
     <div id='page'>
         <div id='doc-sort'>
             <!--書類全体からソートする-->
-            <button type="button" class="sort-btn">業務提案書</button><button type="button" class="sort-btn">業務報告書</button>
+            <button type="button" id="sugg-btn" class="sort-btn">業務提案書</button><button type="button" id="repo-btn"
+                class="sort-btn">業務報告書</button>
         </div>
 
         <div id='content'>
-            <!-- <div id='selected-doc'> -->
-            <!--選択した書類 + 書き込み-->
-            <!-- <h2 class='title'>[document] 書き込み</h2> -->
-            <!-- </div> -->
-
             <p class='ps'>※文字数制限はありません。枠内で改行することができます。</p>
 
             <div id='doc-form'>
@@ -72,20 +70,12 @@
                 <!-- ライブ報告書 -->
                 <div id='repo'>
                     <h2 class='title'>推し、担当 業務報告</h2>
-                    <textarea class='input-box' name="doc-body" placeholder="ライブでの推しや担当について"></textarea>
+                    <textarea class='input-box' name="doc-body"
+                        placeholder="ライブでの推しや担当について&#13;&#10;最高な推し・担当の場面"></textarea>
 
                     <h2 class='title'>総括</h2>
                     <textarea class='input-box' name="doc-body" placeholder="ライブやイベントを総じて"></textarea>
                 </div>
-
-
-                <!-- <div id='forms'> -->
-                <!--選択したタグ分入力できる項目が増える-->
-                <!-- <div class='form'>
-                        <h2 class='title'>[tag] について</h2>
-                        <textarea class='input-box' name="doc-body" placeholder="[tag] について入力してください"></textarea>
-                    </div> -->
-                <!-- </div> -->
             </div>
 
             <div id='pre-button'>
