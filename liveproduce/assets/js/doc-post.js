@@ -10,7 +10,7 @@ $(document).ready(function () {
         doc_select = 1;
         $('#sugg-btn').css({ 'background': 'lightskyblue', 'color': "white" });
         $('#repo-btn').css({ 'background': 'white', 'color': 'black' });
-        $('#sugg').show();
+        $('#sugg').fadeIn();
         $('#repo').hide();
     });
     // 報告書ボタン
@@ -19,7 +19,7 @@ $(document).ready(function () {
         $('#repo-btn').css({ 'background': 'lightskyblue', 'color': "white" });
         $('#sugg-btn').css({ 'background': 'white', 'color': 'black' });
         $('#sugg').hide();
-        $('#repo').show();
+        $('#repo').fadeIn();
     })
     // 確認ボタン
     $('.pre-btn').on('click', function () {
