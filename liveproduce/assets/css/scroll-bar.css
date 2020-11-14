@@ -1,0 +1,17 @@
+/* スクロールの幅の設定 */
+html::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* スクロールの背景の設定 */
+html::-webkit-scrollbar-track {
+  border-radius: 5px;
+  box-shadow: 0 0 4px #aaa inset;
+}
+
+/* スクロールのつまみ部分の設定 */
+html::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #69adff;
+}
