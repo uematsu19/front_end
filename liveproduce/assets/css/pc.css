@@ -55,7 +55,7 @@
         margin: auto;
         overflow: hidden;
     }
-    #content #post-wrapper .post
+    .post
     {
         margin: 25px;
         width: 250px;
@@ -68,14 +68,14 @@
         float: left;
     }
     /* ________.post-title */
-    #content #post-wrapper .post .post-title
+    .post-title
     {
         padding-left: 8px;
         padding-right: 8px;
         font-size: 18px;
     }
     /* ________.post-img */
-    #content #post-wrapper .post .post-img
+    .post-img
     {
         width: 220px;
         height: 124px;
@@ -86,7 +86,7 @@
         border-radius: 6px;
     }
     /* ________.post-heading */
-    #content #post-wrapper .post .post-heading
+    .post-heading
     {
         padding-left: 5px;
         padding-right: 5px;
@@ -94,15 +94,12 @@
         margin-bottom: 25px;
     }
     /* ________.more-link */
-    #content #post-wrapper .post .more-link
+    .more-link
     {
         color: black;
         text-align: center;
 
-        padding-top: 2px;
-        padding-bottom: 5px;
-        padding-right: 5px;
-        padding-left: 5px;
+        padding: 5px;
 
         width: 100px;
         height: 18px;
@@ -113,7 +110,7 @@
 
         text-decoration: none;
     }
-    #content #post-wrapper .post .more-link:hover
+    .more-link:hover
     {
         /* on-cursor */
         color: whitesmoke;
