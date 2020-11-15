@@ -50,6 +50,12 @@ $(document).ready(function () {
     })
     // 投稿ボタン
     $('.doc-post').on('click', function () {
-
+        alert('投稿しました！');
+        doc_post();
     })
 })
+
+// 書類投稿処理
+function doc_post() {
+
+}
