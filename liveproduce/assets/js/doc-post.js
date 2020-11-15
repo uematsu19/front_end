@@ -31,6 +31,7 @@ $(document).ready(function () {
             alert('記入する書類を選択してください。');
         }
         else {
+            $('.ps').hide();
             // プレビュー画面を表示させる
             $('#doc-form').hide();
             $('.pre-btn').hide();
@@ -41,6 +42,7 @@ $(document).ready(function () {
     // 戻るボタン
     $('.return').on('click', function () {
         // フォームを表示し、プレビューは非表示
+        $('.ps').fadeIn();
         $('#doc-form').fadeIn();
         $('.pre-btn').fadeIn();
         $('#doc-pre').hide();
