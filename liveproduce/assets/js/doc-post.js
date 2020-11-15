@@ -12,6 +12,7 @@ $(document).ready(function () {
         doc_select = 1;
         $('#sugg-btn').css({ 'background': 'lightskyblue', 'color': "white" });
         $('#repo-btn').css({ 'background': 'white', 'color': 'black' });
+        $('.ps').html('※文字数制限はありません。枠内で改行することができます。');
         $('#sugg').fadeIn();
         $('#repo').hide();
     })
@@ -20,6 +21,7 @@ $(document).ready(function () {
         doc_select = 2;
         $('#repo-btn').css({ 'background': 'lightskyblue', 'color': "white" });
         $('#sugg-btn').css({ 'background': 'white', 'color': 'black' });
+        $('.ps').html('※文字数制限はありません。枠内で改行することができます。');
         $('#sugg').hide();
         $('#repo').fadeIn();
     })
