@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/pc.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/smart-phone.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/header.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/scroll-bar.css">
 
     <script src="../assets/js/jquery-3.4.1.min.js"></script>
     <script src="../assets/js/header.js"></script>
@@ -58,34 +57,37 @@
 
             <div id='doc-form'>
                 <h2 class='title'>書類タイトル</h2>
-                <textarea class='input-box' name="doc-body" placeholder="ライブ、イベント名を入力してください"></textarea>
+                <textarea class='input-box' name="doc-title" placeholder="書類タイトルを入力してください"></textarea>
+
+                <h2 class='title'>ライブ、イベント名</h2>
+                <textarea class='input-box' name="doc-event" placeholder="ライブ、イベント名を入力してください"></textarea>
 
                 <h2 class='title'>推しグループ名、ユニット名</h2>
-                <textarea class='input-box' name="doc-body" placeholder="推しグループ名、ユニット名など"></textarea>
+                <textarea class='input-box' name="doc-oshi" placeholder="推しグループ名、ユニット名など"></textarea>
 
                 <h2 class='title'>タグ</h2>
-                <textarea class='input-box' name="doc-body" placeholder="半角カンマ区切り&#13;&#10;例. ○○○, ○○○"></textarea>
+                <textarea class='input-box' name="doc-tags" placeholder="半角カンマ区切り&#13;&#10;例. ○○○, ○○○"></textarea>
 
                 <h2 class='title'>ヘッダー画像</h2>
-                <input type="file" name="post-image" id="header-img" accept=" image/jpeg, image/jpg, image/png">
+                <input type="file" name="doc-img" id="header-img" accept=" image/jpeg, image/jpg, image/png">
                 <div id="preview"></div>
 
                 <!-- ライブ提案書 -->
                 <div id='sugg'>
                     <h2 class='title'>理想のセットリスト</h2>
-                    <textarea class='input-box' name="doc-body" placeholder="1. ○○○&#13;&#10;2. ○○○ など"></textarea>
+                    <textarea class='input-box' name="doc-setlist" placeholder="1. ○○○&#13;&#10;2. ○○○ など"></textarea>
 
                     <h2 class='title'>理想の演出</h2>
-                    <textarea class='input-box' name="doc-body" placeholder="この曲でこういった演出が見たい など"></textarea>
+                    <textarea class='input-box' name="doc-dire" placeholder="この曲でこういった演出が見たい など"></textarea>
                 </div>
                 <!-- ライブ報告書 -->
                 <div id='repo'>
                     <h2 class='title'>推し、担当 業務報告</h2>
-                    <textarea class='input-box' name="doc-body"
+                    <textarea class='input-box' name="doc-repo"
                         placeholder="ライブでの推しや担当について&#13;&#10;最高な推し・担当の場面"></textarea>
 
                     <h2 class='title'>総括</h2>
-                    <textarea class='input-box' name="doc-body" placeholder="ライブやイベントを総じて"></textarea>
+                    <textarea class='input-box' name="doc-sum" placeholder="ライブやイベントを総じて"></textarea>
                 </div>
             </div>
 
