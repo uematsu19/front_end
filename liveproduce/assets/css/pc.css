@@ -50,7 +50,7 @@
     }
 
     /* ____#post-wrapper */
-    #content #post-wrapper
+    #content .post-wrapper
     {
         margin: auto;
         overflow: hidden;
