@@ -1,0 +1,54 @@
+
+
+
+
+
+    
+    
+
+
+
+.rank{
+    margin-left:190px;
+    margin-top:60px;
+    width:1000px;
+}
+    
+.number{
+    margin-left:350px;
+    width:50px;
+}
+
+.rank p{
+    display: inline-block;
+    vertical-align:top;
+    font-size:50px;
+  margin-left:10px;
+  padding:10px;
+}
+
+.pic{
+    width:350px;
+}
+
+.artist{
+    margin-top:30px;
+}
+
+
+.button {
+  padding: 0.8em 2em;
+  text-decoration: none;
+  background: white;/*ボタン色*/
+  color: pink;
+  border: solid 2px pink;
+  border-radius: 3px;
+  font-size:15px;
+  vertical-align: middle;
+}
+.button:hover {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+}
+    
