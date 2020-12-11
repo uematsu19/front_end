@@ -6,42 +6,38 @@ header {
   width:100%;
 }
 
-
-.sub {
-  width:80%;
-  margin-left:100px;
-  margin-top:30px;
-  padding: 10px 0;
-  font-size: 25px;
-  color:#ed9cb4;
-}
-.subtitle {
-  margin: 0px 0
-}
-.sub2 .subtitle {
-  overflow: hidden;
+h2 {
   position: relative;
-  padding-bottom: 3px;
+  padding: 1rem 1rem;
+  border-bottom: 3px solid #d8d8d8;
+    margin:20px 0px 10px 100px;
+  width:900px;
+  color:pink;
+  z-index:-100;
 }
-.sub2 .subtitle span{
-  padding: 8px;
-}
-.sub2 .subtitle:before {
-  content: "";
-  border-bottom: 3px solid #ed9cb4;
-  bottom: 0;
-  height: 0;
-  position: absolute;
-  width: 100%;
 
-}
-.sub2 .subtitle:after {
-  border-bottom: 3px solid #ddd;
-  bottom: 0;
-  content: "";
+h2:before {
   position: absolute;
-  width: 100%;
-  
+  bottom: -14px;
+  left: 1em;
+  width: 0;
+  height: 0;
+  content: '';
+  border-width: 14px 12px 0 12px;
+  border-style: solid;
+  border-color: #d8d8d8 transparent transparent transparent;
+}
+
+h2:after {
+  position: absolute;
+  bottom: -10px;
+  left: 1em;
+  width: 0;
+  height: 0;
+  content: '';
+  border-width: 14px 12px 0 12px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
 }
 
 
@@ -103,7 +99,7 @@ width:1200px;
 /*左側のメニューバー*/
 .nav-drawer {
   margin-top:15pt;
-  z-index:10;
+  z-index:1000;
 }
 
 .nav-unshown {
@@ -111,6 +107,7 @@ width:1200px;
 }
 
 #nav-open {
+    position:relative;
   display: inline-block;
   width: 30px;
   height: 22px;
@@ -308,9 +305,83 @@ div.content {
     
     
 
+.side{
+    display:inline-block;
+}
     
     
+.mypage{
+    padding:1.5em 1.5em;
+    margin:30px 0 0 100px;
+    background-color:#ffe8eb;
+    width:880px;
+}
+
+.profile img{
+    width:100px;
     
+}
+
+.profile{
+    vertical-align:top;
+    margin:10px 20px 10px 30px;
+}
+
+
+.gray{
+    color:gray;
+    font-size:13px;
+    margin-top:7px;
+}
     
+
     
+ .mycon img{
+        width:100px;
+        margin:10px 0px;
+    }
+    
+.mycon{
+    margin-left:30px;
+    background-color:white;
+    padding:0.1em 2em;
+    margin-top:10px;
+    width:490px;
+}
+
+.mycon p{
+    margin-top:10px;
+    border-bottom: 3px dotted pink;
+}
+
+
+.mypage a{
+    margin-left:80px;
+}
+
+.event{
+   margin-top:50px;
+   margin-left:100px;
+    padding:1em;
+    text-decoration:none;
+    color:black;
+    font-size:20px;
+    
+}
+
+
+.tag{
+  display: inline-block;
+  padding: 0.2em 1em;
+  text-decoration: none;
+  color: #67c5ff;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: .4s;
+   font-size:13px;
+}
+
+
+
+
     

@@ -4,7 +4,9 @@
   <title>Re:maker</title>
   <link rel="stylesheet" type="text/css" href="remaker_contents.css">
     <link rel="stylesheet" type="text/css" href="../remaker_top.css">
+    <link rel="stylesheet" type="text/css" href="../request/remaker_request.css">
   <meta http-equiv="content-type" charset="utf-8">
+  <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
 </head>
 
 <body>
@@ -19,6 +21,7 @@
 	          <li><a href="../ranking.index.html">ランキング</a></li>
               <li><a href="../request/index.html">リクエスト</a></li>
 	          <li><a href="post.html">リメコン投稿</a></li>
+	     <li><a href="../mypage/mypage.html">マイページ</a></li>
            </ul>
        </div> 
        
@@ -37,19 +40,14 @@
 <br>
 <br>
 <br>
+
 <h3>＊＊＊の検索結果</h3>
 
-<div class="recon">
-<a href="detail.html"><img src="content.jpg"></a>
-<br>
-<p><img src="mypage.png" class="recon-icon"></p>
-<p>タイトルタイトルタイトル</p>
-<br>
-<div class="recon-tag">#グループ名</div>
-     <div class="recon-tag">#コンテンツジャンル</div>
-      <div class="recon-tag">#その他ハッシュタグ</div>
-</div>
-
+<div class="tab-wrap">
+    <input id="TAB-01" type="radio" name="TAB" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-01">リメコン</label>
+    <div class="tab-content">
+        
+        
 <div class="recon">
 <img src="content.jpg">
 <br>
@@ -104,6 +102,47 @@
      <div class="recon-tag">#コンテンツジャンル</div>
       <div class="recon-tag">#その他ハッシュタグ</div>
 </div>
+        
+        
+        
+        
+    </div>
+    <input id="TAB-02" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-02">リクエスト</label>
+    <div class="tab-content">
+        
+        <div class="request">
+       <i class="fas fa-user fa-3x"></i>
+       <a href="../request/detail.html">タイトルタイトル</a><br>
+             <div class="tag">#グループ名</div>
+             <div class="tag">#グループ名</div>
+       <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト..............................</p>
+     </div>
+        
+              <div class="request">
+       <i class="fas fa-user fa-3x"></i>
+       <a href="../request/detail.html">タイトルタイトル</a><br>
+             <div class="tag">#グループ名</div>
+             <div class="tag">#グループ名</div>
+       <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト..............................</p>
+     </div>
+        
+        
+              <div class="request">
+       <i class="fas fa-user fa-3x"></i>
+       <a href="../request/detail.html">タイトルタイトル</a><br>
+             <div class="tag">#グループ名</div>
+             <div class="tag">#グループ名</div>
+       <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト..............................</p>
+     </div>
+        
+        
+    </div>
+
+
+
+
+
+
 
 </body>
 </html>
