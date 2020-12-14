@@ -92,22 +92,15 @@
             </div>
 
             <div id='doc-pre'>
-                <div id='tag-area'>
-                    <div id='tags'>
-                        <!--タグの表示エリア-->
-                        <li class='doc-tag'>[doc-tag]</li>
-                        <li class='doc-tag'>[doc-tag]</li>
-                        <li class='doc-tag'>[doc-tag]</li>
-                    </div>
-                </div>
-
                 <div id='doc-area'>
                     <!--post内容表示エリア-->
                     <img src='../assets/img/DSC_0651.JPG' alt='[doc-img]' class='doc-img'>
-                    <h2 class='doc-title'>バンドリ！パ・リーグコラボ</h2>
-                    <p class='doc-main'>
-                        あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
-                    </p>
+                    <h2 class='doc-title'>
+                        <%= @name %>
+                    </h2>
+                    <div class='doc-main'>
+                        <%= @content %>
+                    </div>
                 </div>
             </div>
 

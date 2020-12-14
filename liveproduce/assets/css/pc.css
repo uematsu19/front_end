@@ -37,18 +37,6 @@
         padding-bottom: 20px;
     }
 
-    /* ____#serch-res */
-    #content #search-res p
-    {
-        padding: 9px;
-        margin-left: 14px;
-        font-size: 16px;
-    }
-    #content #search-res p .hit-cnt
-    {
-        font-weight: bold;
-    }
-
     /* ____#post-wrapper */
     #content .post-wrapper
     {
@@ -115,6 +103,28 @@
         /* on-cursor */
         color: whitesmoke;
         background: #598bbb;
+    }
+
+    /* ____#doc-info-area */
+    #content #doc-info-area
+    {
+        padding: 2px;
+        padding-left: 10px;
+        padding-top: 10px; 
+    }
+    #content #doc-info
+    {
+        overflow: hidden;
+        list-style: none;
+        padding: 0px;
+    }
+    #content li
+    {
+        float: left;
+    }
+    #content #write-user
+    {
+        padding-left: 8px;
     }
 
     /* ____#tag-area */

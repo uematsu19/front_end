@@ -41,48 +41,25 @@
 
     <div id='page'>
         <div id='content'>
-            <div id='tag-area'>
-                <!--タグの表示エリア-->
-                <ul id='tags'>
-                    <li class='doc-tag'>[doc-tag]</li>
-                    <li class='doc-tag'>[doc-tag]</li>
-                    <li class='doc-tag'>[doc-tag]</li>
+            <div id='doc-info-area'>
+                <ul id='doc-info'>
+                    <li id='date'>
+                        <%= @time %>
+                    </li>
+                    <li id='write-user'>
+                        <%= @member_id %>
+                    </li>
                 </ul>
             </div>
 
             <div id='doc-area'>
                 <!--post内容表示エリア-->
                 <img src='../assets/img/DSC_0651.JPG' alt='[doc-img]' class='doc-img'>
-                <h2 class='doc-title'>バンドリ！パ・リーグコラボ</h2>
-                <p class='doc-main'>
-                    あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
-                </p>
-            </div>
-
-            <div id='cmt-area'>
-                <h2 class='title'>コメント</h2>
-                <!--コメント表示エリア-->
-                <div id='posted-cmt'>
-                    <!--コメント数に応じて表示数が変化する-->
-                    <ul id='cmt-list'>
-                        <li class='cmt-user-icon'>
-                            <img src='../assets/img/icon2.png' alt='[user-img]'>
-                        </li>
-                        <li class='user-id'>
-                            hasshie53
-                        </li>
-                        <li class='cmt'>
-                            あいみんの神スイングが見れて最高だった！
-                        </li>
-                    </ul>
-                </div>
-
-                <div id='cmt-form'>
-                    <!--コメント入力フォーム-->
-                    <form action="#" method="post">
-                        <input class="input-box" type="text" placeholder='コメントを残す'><input class='cmt-btn' type="submit"
-                            name="submit" value="入力">
-                    </form>
+                <h2 class='doc-title'>
+                    <%= @name %>
+                </h2>
+                <div class='doc-main'>
+                    <%= @content %>
                 </div>
             </div>
         </div>

@@ -50,17 +50,14 @@
             <div class='post-wrapper'>
                 <!--post数に応じて表示数が変化する-->
                 <div class='post'>
-                    <h2 class='post-title'>バンドリ！パ・リーグコラボ</h2>
+                    <h2 class='post-title'>
+                        <%= @name %>
+                    </h2>
                     <img src='./assets/img/DSC_0651.JPG' alt='[post-img]' class='post-img'>
                     <!--本文の文頭50字など-->
-                    <p class='post-heading'>ああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
-                    <a href='./' class='more-link'>続きを読む</a>
-                </div>
-                <div class='post'>
-                    <h2 class='post-title'>バンドリ！パ・リーグコラボ</h2>
-                    <img src='./assets/img/DSC_0651.JPG' alt='[post-img]' class='post-img'>
-                    <!--本文の文頭50字など-->
-                    <p class='post-heading'>ああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+                    <p class='post-heading'>
+                        <%= @content %>
+                    </p>
                     <a href='./' class='more-link'>続きを読む</a>
                 </div>
             </div>

@@ -37,17 +37,6 @@
         padding-bottom: 20px;
     }
 
-    /* ____#serch-res */
-    #content #search-res p
-    {
-        padding: 9px;
-        font-size: 16px;
-    }
-    #content #search-res p .hit-cnt
-    {
-        font-weight: bold;
-    }
-
     /* ____#post-wrapper */
     .post-wrapper
     {
@@ -116,6 +105,20 @@
         background: #598bbb;
     }
     
+    /* ____#doc-info-area */
+    #content #doc-info-area
+    {
+        padding: 2px;
+        padding-left: 10px;
+        padding-top: 10px; 
+    }
+    #content #doc-info
+    {
+        overflow: hidden;
+        list-style: none;
+        padding: 0px;
+    }
+
     /* ____#tag-area */
     #content #tag-area
     {
