@@ -118,6 +118,14 @@
         list-style: none;
         padding: 0px;
     }
+    #content li
+    {
+        float: left;
+    }
+    #content #write-user
+    {
+        padding-left: 6px;
+    }
 
     /* ____#tag-area */
     #content #tag-area
@@ -161,7 +169,7 @@
     #content #doc-area .doc-title
     {
         font-size: 27px;
-        padding-left: 10px;
+        padding: 10px;
     }
     #content #doc-area .doc-main
     {

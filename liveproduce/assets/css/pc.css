@@ -47,7 +47,7 @@
     {
         margin: 25px;
         width: 250px;
-        height: 330px;
+        height: 185px;
 
         background: #FFFFFF;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -58,8 +58,7 @@
     /* ________.post-title */
     .post-title
     {
-        padding-left: 8px;
-        padding-right: 8px;
+        padding: 8px;
         font-size: 18px;
     }
     /* ________.post-img */
@@ -78,8 +77,8 @@
     {
         padding-left: 5px;
         padding-right: 5px;
-        margin-top: 10px;
-        margin-bottom: 25px;
+        margin-top: 6px;
+        margin-bottom: 10px;
     }
     /* ________.more-link */
     .more-link
@@ -171,7 +170,7 @@
     #content #doc-area .doc-title
     {
         font-size: 27px;
-        padding-left: 10px;
+        padding: 10px;
     }
     #content #doc-area .doc-main
     {
