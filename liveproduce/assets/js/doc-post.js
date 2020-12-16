@@ -88,7 +88,7 @@ $(document).ready(function () {
 // COTOHA_APIで感情分析結果のJSONを返す
 function call_cotoha(sentence) {
     $.ajax({
-        url: './parsing.cgi',
+        url: '../assets/cgi/parsing.cgi',
         type: 'POST',
         data: sentence,
     }).then(
