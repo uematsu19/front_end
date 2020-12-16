@@ -39,8 +39,8 @@
 .button {
   padding: 0.8em 2em;
   text-decoration: none;
-  background: white;/*ボタン色*/
-  color: pink;
+  background: pink;/*ボタン色*/
+  color: white;
   border: solid 2px pink;
   border-radius: 3px;
   font-size:15px;

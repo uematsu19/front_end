@@ -41,9 +41,8 @@
 
 
 .detail{
-    border:5px solid pink;
-    width: 800px;
-    height:300px;
+    background-color:#ffe8eb;
+    width: 930px;
     margin:20px 0 0 100px;
     }
     
@@ -63,8 +62,12 @@
 
 
 .profile{
-    margin-top:20px;
+    margin-top:40px;
+
+    padding:20px;
+    width:120px;
 }
+
 .side{
     display:inline-block;
     margin-top:20px;
@@ -75,7 +78,9 @@
     }
     
 .req_detail{
-    width:500px;
+    width:620px;
+    background-color:white;
+    padding:20px 30px;
     }
     
     
@@ -83,13 +88,14 @@
     .message{
   position: relative;
   display: inline-block;
-  margin: 1.5em 0 1.5em 15px;
-  padding: 7px 10px;
+  margin: 1.5em 0 1.5em 25px;
+  padding: 15px 20px;
   min-width: 120px;
   max-width: 100%;
   color: #555;
   font-size: 16px;
   background: #e0edff;
+  width:640px;
 }
 
 .message:before {
@@ -108,6 +114,23 @@
 }
 
 
-.button{
+.button {
+  padding: 0.8em 2em;
+  text-decoration: none;
+  background: white;/*ボタン色*/
+  color: pink;
+  border: solid 2px pink;
+  border-radius: 3px;
+  font-size:15px;
+  vertical-align: middle;
+  margin-left:500px;
 }
-    
+.button:hover {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+}
+
+.member{
+    margin-left:45px;
+    }

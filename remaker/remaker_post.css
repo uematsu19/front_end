@@ -37,7 +37,7 @@
 .input-img{
    width:370px;
 	padding:10px;
-	margin-left:70px;
+	margin-left:110px;
 	vertical-align:middle;
 	border-radius:5px;
 	border: solid 1px #aaa;
@@ -102,4 +102,41 @@ table td{
 
 .pre-req th{
 	width:200px;
+}
+
+.button {
+  padding: 0.8em 2em;
+  text-decoration: none;
+  background: white;/*ボタン色*/
+  color: pink;
+  border: solid 2px pink;
+  border-radius: 3px;
+  font-size:15px;
+  vertical-align: middle;
+  margin:30px 0px 30px 350px;
+  
+}
+.button:hover {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+}
+
+
+.button2 {
+  padding: 0.8em 2em;
+  text-decoration: none;
+  background: white;/*ボタン色*/
+  color: pink;
+  border: solid 2px pink;
+  border-radius: 3px;
+  font-size:15px;
+  vertical-align: middle;
+  margin:30px 0px 30px 490px;
+  width:35px;
+}
+.button2:hover {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
 }
