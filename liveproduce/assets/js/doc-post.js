@@ -37,6 +37,12 @@ $(document).ready(function () {
             alert('記入する書類を選択してください。');
         }
         else {
+            $('#shadow').show(); // 分析が終わるまでの待機画面
+
+            // 分析が終わるまでボタンの無効化
+            $('.return').prop("disabled", true);
+            $('.doc-post').prop("disabled", true);
+
             let s = ""; // 感情分析をする文章
 
             if (doc_type == 1) {
@@ -51,7 +57,6 @@ $(document).ready(function () {
                 call_cotoha(s);
 
                 // フォームを非表示にして、プレビュー画面を表示させる
-                $('.ps').hide();
                 $('#doc-form').hide();
                 $('.pre-btn').hide();
                 $('#doc-pre').fadeIn();
@@ -64,6 +69,7 @@ $(document).ready(function () {
     })
     // 戻るボタン
     $('.return').on('click', function () {
+        doc_score = { score: 0, sentiment: "" }; // スコアを初期化
         // フォームを表示し、プレビューは非表示
         $('.ps').fadeIn();
         $('#doc-form').fadeIn();
@@ -73,14 +79,7 @@ $(document).ready(function () {
     })
     // 投稿ボタン
     $('.doc-post').on('click', function () {
-        // sentiment == Psitive && score が 0.5 以上のとき、投稿できる
-        if (doc_score.sentiment == "Positive" && doc_score.score >= 0.500) {
-            alert('投稿しました！');
-            doc_post();
-        }
-        else {
-            alert('ポジティブな表現での記入をお願いします。');
-        }
+        alert('投稿しました！');
     })
 })
 
@@ -95,13 +94,15 @@ function call_cotoha(sentence) {
     }).then(
         // 成功
         function (result) {
-            console.log(result);
             res = JSON.parse(result); // JSON形式に変換
             console.log(res);
 
             // スコアを代入
             doc_score.score = res.result.score;
             doc_score.sentiment = res.result.sentiment;
+
+            $('#shadow').hide(); // 待機画面から抜ける
+            $('.return').prop("disabled", false); // 戻るボタンの有効化
 
             // 結果からネガティブ感情の言葉をマークする
             negative_mark(sentence, res.result.emotional_phrase, 'negative_w');
@@ -126,8 +127,27 @@ function negative_mark(str, word_arr, class_name) {
         }
     })
 
-    // マークした要素を代入
-    $('.doc-main').html(res);
+    // 分析スコアを表示
+    // sentiment == Psitive && score が 0.5 以上のとき、投稿できる
+    if (doc_score.sentiment == "Positive" && doc_score.score >= 0.600) {
+        $('.ps').html('感情: ' + doc_score.sentiment + '<br>' + '感情の強さ(1に近いほど強い): ' + doc_score.score + '<br>' + 'この書類を投稿することができます！');
+        $('.doc-post').prop("disabled", false); // 投稿ボタンの有効化
+    }
+    else {
+        $('.ps').html('感情: ' + doc_score.sentiment + '<br>' + '感情の強さ(1に近いほど強い): ' + doc_score.score + '<br><mark class="negative_w">' + 'もっと前向きな表現で記入してください！');
+    }
+
+    // 書類のプレビューを表示
+    let doc_title = "";
+    doc_title = $('textarea[name="doc-title"]').val(); // タイトル要素を代入
+    if (doc_title == "") {
+        $('.doc-title').html('NO TITLE');
+    }
+    else {
+        $('.doc-title').html(doc_title);
+    }
+
+    $('.doc-main').html(res); // マークした要素を代入
 }
 
 
