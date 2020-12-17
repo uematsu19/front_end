@@ -51,4 +51,11 @@
   -webkit-transform: translateY(4px);
   transform: translateY(4px);/*下に動く*/
 }
+
+
+.com{
+    margin-left:210px;
+    margin-top:80px;
+    color:gray;
+}
     
