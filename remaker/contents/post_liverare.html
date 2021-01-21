@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Re:maker</title>
+  <link rel="stylesheet" type="text/css" href="remaker_contents.css">
+    <link rel="stylesheet" type="text/css" href="../remaker_top.css">
+    <link rel="stylesheet" type="text/css" href="../remaker_post.css">
+  <meta http-equiv="content-type" charset="utf-8">
+<link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div id="nav-drawer">
+      <input id="nav-input" type="checkbox" class="nav-unshown">
+      <label id="nav-open" for="nav-input"><span></span></label>
+      <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+        <div id="nav-content">
+           <ul class="sidenav">
+	          <li><a href="../index.html">ホーム</a></li>
+	          <li><a href="../ranking/index.html">ランキング</a></li>
+              <li><a href="../request/index.html">リクエスト</a></li>
+	          <li><a href="../contents/post.html">リメコン投稿</a></li>
+	          <li><a href="../mypage/mypage.html">マイページ</a></li>
+           </ul>
+       </div> 
+       
+       
+          <img src="../remaker.png" width="120px">
+          
+      <form id="form01" action="#" class="form">
+         <input id="input01" type="text"><!--
+          /input間で改行したい場合はコメントアウト必須/
+          --><input id="submit01" type="submit" value="検索">
+      </form>
+
+      <div class="info">
+         <a href="../searvice.html" class="searvice">このサービスについて</a>
+      </div>
+
+    </div>
+  </header>
+<br>
+ <br>
+ <br>
+ 
+<div class="cp_breadcrumb">
+	<ul class="breadcrumb">
+	<li><a href="../index.html">  <i class="fas fa-home"></i> ホーム</a></li>
+	<li><a href="post.html">  <i class="fas fa-caret-right"></i>  リメコン投稿</a></li>
+	</ul>
+</div>
+  
+<h2>リメコン投稿</h2>
+<br>
+<br>
+ <div class="input-container">
+    <form action="#" method="post" class="post">
+	  <p>タイトル
+	    <input type="text" name="event" class="input" value="タイトルタイトル（ここ自由に変えていいやつ)">
+	  </p>
+	 
+	  <p>グループ
+	         <input type="text" name="tag2" list="list2" class="input"  value="グループ名（自由に変えていいやつ)">
+           <datalist id="list2">
+             <option value="グループ1">
+             <option value="グループ2">
+             <option value="グループ3">
+          </datalist></p>
+          
+      <p>ハッシュタグ
+        <input type="text" name="tag1" list="list" class="input-tag1" value="Livera:Re">
+          <datalist id="list">
+              <option value="DJライブ">
+   			  <option value="バラード">
+   			  <option value="リミックス">
+    	  </datalist>
+       <input type="text" name="tag2" list="list" class="input-tag" value="アーカイブ">
+       <input type="text" name="tag3" list="list" class="input-tag"></p>
+     </select>
+    </p>
+
+    <p>アップロード
+      <img src="../mashup.jpg" class="liverare">
+    </p>
+
+    
+    <p>概要
+      <textarea name="comment" cols="50" rows="5" class="input-detail"></textarea>
+    </p>
+   
+   <a href="post_pre.html" class="button">投稿確認画面へ</a>
+    
+    </form>
+</div>
+
+</body>
+</html>
+

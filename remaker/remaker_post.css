@@ -140,3 +140,7 @@ table td{
   -webkit-transform: translateY(4px);
   transform: translateY(4px);/*下に動く*/
 }
+
+.liverare{
+	margin-left:110px;
+}
