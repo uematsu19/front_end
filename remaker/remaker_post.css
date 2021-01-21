@@ -141,6 +141,11 @@ table td{
   transform: translateY(4px);/*下に動く*/
 }
 
+.button2 a{
+	 text-decoration: none;
+	   color: pink;
+	}
+
 .liverare{
 	margin-left:110px;
 }
