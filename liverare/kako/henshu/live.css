@@ -298,8 +298,8 @@ input[type=range] {
     line-height: 1em; /* 1行の高さ  */
     opacity: 1; /* 透明度     */
     transition: .3s; /* なめらか変化 */
-}0
-    .button1:hover {
+}
+   .button1:hover {
         opacity: 0.8; /* カーソル時透明度 */
     }
 
