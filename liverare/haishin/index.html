@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<meta name=”viewport” content=”width =device-width,initial-scale =1.0″>
+<head>
+    <meta charset="UTF8" />
+    <title>JavaScript Test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="hello.js"></script>
+    <link rel="stylesheet" href="live.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <h1 class="headline">
+            <a>Livera:Re</a>
+            <a href="rogin/index.html" class="btn-border-bottom">ログイン</a>
+        </h1>
+    </header>
+
+    <script>
+    function pSpeed1() {
+    var media = document.getElementById("mv");
+    media.playbackRate = 1.0;
+    document.getElementById("mv").play();
+    }
+
+    //メディアオブジェクトの取得
+    function pSpeed() {
+    var media = document.getElementById("mv");
+    //playbackRateによる速度変更
+    media.playbackRate = 2;
+    document.getElementById("mv").play();
+    }
+
+    //一時停止
+    function Pause1() {
+    document.getElementById("mv").pause();
+    }
+
+    </script>
+
+    <main>
+        <div class="mv">
+            <video autobuffer controls id="mv" width="720" height="480">
+                <source src="./pro.mp4" type="video/mp4">
+            </video>
+        </div>
+
+      <div class="zentai">
+            <video autobuffer controls id="zentai" width="720" height="480">
+                </video>
+
+       </div>
+
+        <br />
+        <div class="modeselection">
+            <div class="mode"></div>
+            <div class="kirikae"><button onclick="pSpeed0()" class="btn-circle-border-simple1">切替</button></div>
+            <div class="kirikae1"><button onclick="pSpeed0()" class="btn-circle-border-simple1">切替</button></div>
+            <div class="cselections">
+
+                <div class="cselect">
+                </div>
+            </div>
+            <div class="x">
+                <button onclick="pSpeed1()" class="btn-circle-border-simple">再生</button>
+                <button onclick="Pause1()" class="btn-circle-border-simple">一時停止</button>
+                <button onclick="pSpeed()" class="btn-circle-border-simple">２倍速</button>
+                <button onclick="PlayFromFirst1()" class="btn-circle-border-simple">最初から再生</button>
+            </div>
+
+    </main>
+
+    <div class="sselections">
+        <div class="sselect"></div>
+    </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="live.css" />
+    <title>JavaScript Test</title>
+</head>
+
+<!-- header -->
+<header>
+    <h1 class="headline">
+        <a>Livera:Re</a>
+        <a href="rogin/index.html" class="btn-border-bottom">ログイン</a>
+    </h1>
+</header>
+<main>
+    <body onLoad="getDuration()">
+
+        <div class="box7">
+            <a href="../index.html" class="btn-sticky">全体</a>
+            <a href="gk/index.html" class="btn-sticky">グクホン視点</a>
+            <a href="yb/index.html" class="btn-sticky">ユビン視点</a>
+            <a href="yh/index.html" class="btn-sticky">ヨハン視点</a>
+        </div>
+
+
+            <video id="video" src="グクホン.mp4" width="720" height="480" controls></video>
+            <input type="range" value="1" min="0" max="323.222" step="0.001"
+                   oninput="document.getElementById('output1').value=this.value">
+
+
+
+            <div class="bo" style="width:720px; background-color:#333333; color:#ffffff;">
+                <input type="button" value="再生" onClick="playVideo()">
+                <input type="button" value="一時停止" onClick="pauseVideo()">
+                <input type="button" value="↑" onClick="upVolume()">
+                <input type="button" value="↓" onClick="downVolume()"><br>
+                現在（秒）：<span id="ichi">0</span><br>
+                終点（秒）：<output id="output1">0</output><br>
+                全体（秒）：<span id="nagasa"></span><br>
+                <span id="kanryou"></span>
+            </div>
+            <script type='text/javascript' src='jquery-1.7.1.min.js'></script>
+            <script type='text/javascript' src='jquery-ui-1.8.17.custom.min.js'></script>
+
+            <script type="text/javascript">var v = document.getElementById("video");
+
+                function getDuration() {
+                    //動画の長さ（秒）を表示
+                    document.getElementById("nagasa").innerHTML = v.duration;
+                }
+
+                function playVideo() {
+                    //再生完了の表示をクリア
+                    document.getElementById("kanryou").innerHTML = "";
+                    //動画を再生
+                    v.play();
+                    //現在の再生位置（秒）を表示
+                    v.addEventListener("timeupdate", function () {
+                        document.getElementById("ichi").innerHTML = v.currentTime;
+                    }, false);
+                    v.addEventListener("timeupdate", function () {
+                        document.getElementById("nagasa1").innerHTML = v.currentTime;
+                    }, false);
+                    //再生完了を知らせる
+                    v.addEventListener("ended", function () {
+                        document.getElementById("kanryou").innerHTML = "動画の再生が完了しました。";
+                    }, false);
+                }
+
+                function pauseVideo() {
+                    //動画を一時停止
+                    v.pause();
+                }
+
+                function upVolume() {
+                    //音量を上げる
+                    v.volume = v.volume + 0.25;
+                }
+
+                function downVolume() {
+                    //音量を下げる
+                    v.volume = v.volume - 0.25;
+                }
+
+
+                // 配列で取得
+                var values = $("#slider").slider("option", "values");
+
+                // Index指定で取得
+                var value0 = $("#slider").slider("option", "values", 0);
+
+                // 配列で設定
+                $("#slider").slider("option", "values", [5, 7]);
+
+                // Index指定で設定
+                $("#slider").slider("option", "values", 0, 5); Copy</script>
+
+            <form action="hozon/index.html">
+                数値を入力して下さい。<br>
+                <div class="a">
+                    <p><input type="number" name="quantity1" min="0" max="321.222222" step="0.00000001">始点値</p>
+                    <p><input type="number" name="quantity2" min="1" max="322.222222" step="0.00000001">終点値</p>
+                </div>
+                <input type="submit" value"送信" class="button1">
+
+    </body>
+
+    <script>// ボタンの要素を取得
+        var button1 = document.getElementById("button");
+
+        // ボタンをクリックした時の処理
+        button1.addEventListener("click", function (e) {
+
+            e.preventDefault();
+
+            // 入力フォームの値を取得
+            var textForm = document.getElementById("textForm").value;
+
+            // 取得した値を別の入力フォームに表示
+            var resultForm = document.getElementById("resultForm");
+            resultForm.value = textForm;
+        });</script>
+
+ 
+
+
+    </form >
+    </body >
+</html >
+
+
+</main >
+</body >
+</html >
