@@ -37,12 +37,6 @@ $(document).ready(function () {
             alert('記入する書類を選択してください。');
         }
         else {
-            $('#shadow').show(); // 分析が終わるまでの待機画面
-
-            // 分析が終わるまでボタンの無効化
-            $('.return').prop("disabled", true);
-            $('.doc-post').prop("disabled", true);
-
             let s = ""; // 感情分析をする文章
 
             if (doc_type == 1) {
@@ -54,6 +48,12 @@ $(document).ready(function () {
             // 分析をする文章が空じゃなければ、APIに投げて結果を受ける
             if (!s == "") {
                 console.log(s);
+                $('#shadow').show(); // 分析が終わるまでの待機画面
+
+                // 分析が終わるまでボタンの無効化
+                $('.return').prop("disabled", true);
+                $('.doc-post').prop("disabled", true);
+
                 call_cotoha(s);
 
                 // フォームを非表示にして、プレビュー画面を表示させる
