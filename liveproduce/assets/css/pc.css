@@ -37,18 +37,6 @@
         padding-bottom: 20px;
     }
 
-    /* ____#serch-res */
-    #content #search-res p
-    {
-        padding: 9px;
-        margin-left: 14px;
-        font-size: 16px;
-    }
-    #content #search-res p .hit-cnt
-    {
-        font-weight: bold;
-    }
-
     /* ____#post-wrapper */
     #content .post-wrapper
     {
@@ -59,7 +47,7 @@
     {
         margin: 25px;
         width: 250px;
-        height: 330px;
+        padding-bottom: 12px;
 
         background: #FFFFFF;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -70,8 +58,7 @@
     /* ________.post-title */
     .post-title
     {
-        padding-left: 8px;
-        padding-right: 8px;
+        padding: 8px;
         font-size: 18px;
     }
     /* ________.post-img */
@@ -90,8 +77,8 @@
     {
         padding-left: 5px;
         padding-right: 5px;
-        margin-top: 10px;
-        margin-bottom: 25px;
+        margin-top: 6px;
+        margin-bottom: 10px;
     }
     /* ________.more-link */
     .more-link
@@ -115,6 +102,28 @@
         /* on-cursor */
         color: whitesmoke;
         background: #598bbb;
+    }
+
+    /* ____#doc-info-area */
+    #content #doc-info-area
+    {
+        padding: 2px;
+        padding-left: 10px;
+        padding-top: 10px; 
+    }
+    #content #doc-info
+    {
+        overflow: hidden;
+        list-style: none;
+        padding: 0px;
+    }
+    #content li
+    {
+        float: left;
+    }
+    #content #write-user
+    {
+        padding-left: 8px;
     }
 
     /* ____#tag-area */
@@ -161,7 +170,7 @@
     #content #doc-area .doc-title
     {
         font-size: 27px;
-        padding-left: 10px;
+        padding: 10px;
     }
     #content #doc-area .doc-main
     {

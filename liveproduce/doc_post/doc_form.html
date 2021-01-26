@@ -13,7 +13,7 @@
     <script src="../assets/js/header.js"></script>
     <script src="../assets/js/sort_style.js"></script>
     <script src="../assets/js/doc-post.js"></script>
-    <script src="../assets/js/add_img_pre.js"></script>
+    <!-- <script src="../assets/js/add_img_pre.js"></script> -->
 
     <title>Document_form</title>
 </head>
@@ -27,10 +27,9 @@
 
             <div id="nav-content">
                 <ul class="sidenav">
-                    <li><a href="index.html">ライブ提案書</a></li>
-                    <li><a href="index.html">ライブ報告書</a></li>
-                    <li><a href="index.html">書類を書く</a></li>
-                    <li><a href="index.html">このサイトについて</a></li>
+                    <li><a href="../serch_res/index.html">ライブ提案書</a></li>
+                    <li><a href="../serch_res/index.html">ライブ報告書</a></li>
+                    <li><a href="./doc_form.html">書類を書く</a></li>
                 </ul>
             </div>
 
@@ -43,6 +42,8 @@
             </div>
         </div>
     </header>
+
+    <div id='shadow'></div>
 
     <div id='page'>
         <div id='doc-sort'>
@@ -68,9 +69,9 @@
                 <h2 class='title'>タグ</h2>
                 <textarea class='input-box' name="doc-tags" placeholder="半角カンマ区切り&#13;&#10;例. ○○○, ○○○"></textarea>
 
-                <h2 class='title'>ヘッダー画像</h2>
+                <!-- <h2 class='title'>ヘッダー画像</h2>
                 <input type="file" name="doc-img" id="header-img" accept=" image/jpeg, image/jpg, image/png">
-                <div id="preview"></div>
+                <div id="preview"></div> -->
 
                 <!-- ライブ提案書 -->
                 <div id='sugg'>
@@ -92,22 +93,12 @@
             </div>
 
             <div id='doc-pre'>
-                <div id='tag-area'>
-                    <div id='tags'>
-                        <!--タグの表示エリア-->
-                        <li class='doc-tag'>[doc-tag]</li>
-                        <li class='doc-tag'>[doc-tag]</li>
-                        <li class='doc-tag'>[doc-tag]</li>
-                    </div>
-                </div>
-
+                <!-- <p class='ps'></p> -->
                 <div id='doc-area'>
                     <!--post内容表示エリア-->
-                    <img src='../assets/img/DSC_0651.JPG' alt='[doc-img]' class='doc-img'>
-                    <h2 class='doc-title'>バンドリ！パ・リーグコラボ</h2>
-                    <p class='doc-main'>
-                        あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
-                    </p>
+                    <!-- <img src='../assets/img/DSC_0651.JPG' alt='[doc-img]' class='doc-img'> -->
+                    <h2 class='doc-title'></h2>
+                    <div class='doc-main'></div>
                 </div>
             </div>
 

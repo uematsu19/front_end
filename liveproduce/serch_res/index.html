@@ -22,10 +22,9 @@
 
             <div id="nav-content">
                 <ul class="sidenav">
-                    <li><a href="index.html">ライブ提案書</a></li>
-                    <li><a href="index.html">ライブ報告書</a></li>
-                    <li><a href="index.html">書類を書く</a></li>
-                    <li><a href="index.html">このサイトについて</a></li>
+                    <li><a href="./index.html">ライブ提案書</a></li>
+                    <li><a href="./index.html">ライブ報告書</a></li>
+                    <li><a href="../doc_post/doc_form.html">書類を書く</a></li>
                 </ul>
             </div>
 
@@ -50,11 +49,15 @@
             <div class='post-wrapper'>
                 <!--post数に応じて表示数が変化する-->
                 <div class='post'>
-                    <h2 class='post-title'>[post-title]</h2>
-                    <img src='../assets/img/DSC_0651.JPG' alt='[post-img]' class='post-img'>
-                    <!--本文の文頭30字など-->
-                    <p class='post-heading'>[post-heading]</p>
-                    <a href='./' class='more-link'>続きを読む</a>
+                    <h2 class='post-title'>
+                        <%= @name %>
+                    </h2>
+                    <!-- <img src='../assets/img/DSC_0651.JPG' alt='[post-img]' class='post-img'> -->
+                    <!--本文の文頭50字-->
+                    <p class='post-heading'>
+                        <%= @content %>
+                    </p>
+                    <a href='../document/index.html' class='more-link'>続きを読む</a>
                 </div>
             </div>
         </div>
