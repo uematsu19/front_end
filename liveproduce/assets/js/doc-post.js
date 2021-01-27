@@ -39,10 +39,11 @@ $(document).ready(function () {
         else {
             let s = ""; // 感情分析をする文章
 
-            if (doc_type == 1) {
-                s = $('textarea[name="doc-setlist"]').val() + $('textarea[name="doc-dire"]').val();
+            if (doc_type == 1) {      // ライブ提案書
+                // s = $('textarea[name="doc-setlist"]').val() + $('textarea[name="doc-dire"]').val();
+                s = $('textarea[name="doc-dire"]').val();
             }
-            else if (doc_type == 2) {
+            else if (doc_type == 2) { // ライブ報告書
                 s = $('textarea[name="doc-repo"]').val() + $('textarea[name="doc-total"]').val();
             }
             // 分析をする文章が空じゃなければ、APIに投げて結果を受ける
@@ -105,7 +106,7 @@ function call_cotoha(sentence) {
             $('.return').prop("disabled", false); // 戻るボタンの有効化
 
             // 結果からネガティブ感情の言葉をマークする
-            negative_mark(sentence, res.result.emotional_phrase, 'negative_w');
+            negative_mark(res.result.emotional_phrase, 'negative_w');
         },
         // 失敗
         function (err) {
@@ -113,9 +114,16 @@ function call_cotoha(sentence) {
         })
 }
 
-// ネガティブ感情を含むワードをマークする
-function negative_mark(str, word_arr, class_name) {
-    let res = str;
+// ネガティブ感情を含むワードをマークしプレビューを描画
+function negative_mark(word_arr, class_name) {
+    let res = "";
+
+    if (doc_type == 1) {
+        res = $('textarea[name="doc-dire"]').val();
+    }
+    else if (doc_type == 2) {
+        res = '<h2 class="title">推し、担当 業務報告</h2>' + $('textarea[name = "doc-repo"]').val() + '<h2 class="title">総括</h2>' + $('textarea[name="doc-total"]').val();
+    }
 
     word_arr.forEach((e) => {
         if (e.emotion == "N") {
@@ -140,14 +148,23 @@ function negative_mark(str, word_arr, class_name) {
     // 書類のプレビューを表示
     let doc_title = "";
     doc_title = $('textarea[name="doc-title"]').val(); // タイトル要素を代入
-    if (doc_title == "") {
+    if (doc_title == "") { // タイトル未記入時
         $('.doc-title').html('NO TITLE');
     }
     else {
         $('.doc-title').html(doc_title);
     }
 
-    $('.doc-main').html(res); // マークした要素を代入
+    // ライブ提案書の場合は、感情分析を掛けていないセットリストを含めプレビューする
+    if (doc_type == 1) {
+        // テキストエリアの改行をbrに置換してプレビュー
+        $('.doc-main').html('<h2 class="title">理想のセットリスト</h2>' + $('textarea[name="doc-setlist"]').val().replace(/\r?\n/g, '<br />') + '<h2 class="title">理想の演出</h2>' + res.replace(/\r?\n/g, '<br />'));
+    }
+    // ライブ報告書の場合は、そのままプレビューする
+    else if (doc_type == 2) {
+        // テキストエリアの改行をbrに置換してプレビュー
+        $('.doc-main').html(res.replace(/\r?\n/g, '<br />'));
+    }
 }
 
 
