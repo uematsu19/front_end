@@ -81,6 +81,8 @@ $(document).ready(function () {
     // 投稿ボタン
     $('.doc-post').on('click', function () {
         alert('投稿しました！');
+        // OK をクリック
+        location.href = '../index.html'; // ライブプロデュースシステムTOPへ移動
     })
 })
 
